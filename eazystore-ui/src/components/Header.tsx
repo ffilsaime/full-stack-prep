@@ -4,7 +4,7 @@ import { faShoppingBasket, faTags } from "@fortawesome/free-solid-svg-icons";
 export default function Header(){
 
     return (
-        <div className="header">
+        <header className="header">
             <div className="container">
                 <a href="/" className="link">
                     <FontAwesomeIcon icon={faTags} className="fa-icon"/>
@@ -32,6 +32,6 @@ export default function Header(){
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
     );
 }
