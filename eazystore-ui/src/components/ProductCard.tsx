@@ -1,7 +1,11 @@
 import type {ProductImpl} from "../interfaces/ProductRelated.ts";
 import Price from "./Price.tsx";
 
-export default function ProductCard (product : ProductImpl) {
+interface ProductCardProps {
+    product: ProductImpl
+}
+
+export default function ProductCard ({product} : ProductCardProps) {
 
     return (
         <div className="product-card">
