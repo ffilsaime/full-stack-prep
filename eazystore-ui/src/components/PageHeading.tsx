@@ -1,10 +1,17 @@
 import PageTitle from "./PageTitle";
+import type {ReactNode} from "react";
 
-export default function PageHeading (){
+interface PageHeadingProps {
+    title: string;
+    children: ReactNode;
+}
+
+export default function PageHeading ({title, children}: PageHeadingProps){
 
     return (
         <div className="page-heading-container">
-            <PageTitle title="Explore Eazy Stickers" />
+            <PageTitle title={title}/>
+            <p className="page-heading-paragraph">{children}</p>
         </div>
     );
 }
