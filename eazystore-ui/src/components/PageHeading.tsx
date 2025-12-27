@@ -3,8 +3,8 @@ import PageTitle from "./PageTitle";
 export default function PageHeading (){
 
     return (
-        <>
-            <PageTitle />
-        </>
+        <div className="page-heading-container">
+            <PageTitle title="Explore Eazy Stickers" />
+        </div>
     );
 }

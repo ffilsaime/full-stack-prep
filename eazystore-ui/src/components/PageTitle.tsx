@@ -1,8 +1,12 @@
 
-export default function PageTitle(){
+interface PageTitleProps {
+    title: string
+}
+
+export default function PageTitle({title}: PageTitleProps){
     return (
         <>
-            Page Title
+            <h1 className="page-title">{title}</h1>
         </>
     );
 }
