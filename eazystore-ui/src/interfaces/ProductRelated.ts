@@ -7,9 +7,10 @@ export interface ProductImpl extends PriceImpl{
     imageUrl: string;
     name: string;
     description: string;
+    popularity: string;
 }
 
 export interface PriceImpl {
-    currency: string;
+    currency?: string;
     price: number;
 }
