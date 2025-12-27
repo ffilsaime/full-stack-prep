@@ -1,9 +1,5 @@
-export interface ProductCardImpl {
-    productId: number,
-    product: ProductImpl
-}
-
 export interface ProductImpl extends PriceImpl{
+    productId: number;
     imageUrl: string;
     name: string;
     description: string;

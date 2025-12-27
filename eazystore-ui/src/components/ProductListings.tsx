@@ -1,8 +1,8 @@
-import type {ProductCardImpl} from "../interfaces/ProductRelated.ts";
+import type {ProductImpl} from "../interfaces/ProductRelated.ts";
 import ProductCard from "./ProductCard.tsx";
 
 interface ProductListingsProps {
-    products: ProductCardImpl[]
+    products: ProductImpl[]
 }
 
 export default function ProductListings({products} : ProductListingsProps){
@@ -13,7 +13,7 @@ export default function ProductListings({products} : ProductListingsProps){
                 {
                     products.length > 0 ? (
                         products.map((product) => (
-                            <ProductCard key={product.productId} product={product.product} />
+                            <ProductCard key={product.productId} product={product} />
                         ))
                     ) : (
                         <p className="product-listings-empty">No products found</p>
